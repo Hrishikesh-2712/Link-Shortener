@@ -60,6 +60,6 @@ export async function POST(request: NextRequest) {
         return NextResponse.json(link, { status: 201 });
     } catch (error) {
         console.error('Error creating link:', error);
-        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+        return NextResponse.json({ error: error instanceof Error ? error.message : String(error) }, { status: 500 });
     }
 }
