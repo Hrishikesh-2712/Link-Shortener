@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bitly Clone - URL Shortener",
+  title: "TinyLink - URL Shortener",
   description: "Shorten your links easily.",
 };
 
